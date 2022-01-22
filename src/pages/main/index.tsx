@@ -1,4 +1,4 @@
-import React, { useReducer, useRef } from "react";
+import React, { useReducer } from "react";
 
 import { FieldFormContext } from "stores/fieldForm/context";
 import { FieldFormReducer, FormField } from "stores/fieldForm/types";
@@ -10,7 +10,7 @@ import FormPreviewer from "./components/FormPreviewer";
 import ControlsSelector from "./components/ControlsSelector";
 import InputAddForm from "./components/InputAddForm";
 import { FieldsType } from "lib/enums/fields";
-import { generateHTMLCode } from "../../stores/fieldForm/helpers";
+import { generateHTMLCode } from "stores/fieldForm/helpers";
 
 function Main() {
   const [state, dispatch] = useReducer<FieldFormReducer>(reducer, initState);

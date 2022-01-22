@@ -85,7 +85,7 @@ const InputAddForm: React.FC<Props> = (props) => {
         }));
       }
     }
-  }, [props.field]);
+  }, [props.field, props.fieldType]);
   if (props.fieldType === FieldsType.SUBMIT) {
     return (
       <ModalWindow

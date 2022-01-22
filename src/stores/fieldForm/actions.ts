@@ -11,7 +11,7 @@ export const startEditField = <T extends FieldsType>(
     payload: editField,
   });
 };
-export const editExistedField = <T extends FieldsType>(
+export const editExistedField = (
     dispatch: FieldFormDispatch,
     id: string
 ) => {

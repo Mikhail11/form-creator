@@ -78,6 +78,7 @@ const FormPreviewer = () => {
                 </EditFormItem>
               );
           }
+          return null;
         })}
       </fieldset>
     </form>
